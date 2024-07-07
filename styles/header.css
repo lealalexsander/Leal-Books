@@ -19,6 +19,7 @@
 .container {
     display: flex;
     align-items: center;
+    
 }
 
 .container__botao {
@@ -27,6 +28,7 @@
 
 .container__imagem {
     padding: 1em;
+    width: 3em;
 }
 
 .lista-menu {
@@ -39,6 +41,7 @@
 
 .container__botao:checked ~ .lista-menu {
     display: block;
+    
 }
 
 .lista-menu__titulo,
@@ -52,7 +55,7 @@
     color: var(--cor-secundaria);
     font-weight: bold;
     font-weight: 700;
-    font-size: 16px;
+    font-size: 20px;
 }
 
 .lista-menu__link {
