@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="reset.css">
 
-    <link rel="icon" href="./assets/logo.png" type="image/x-icon">
+    <link rel="icon" href="./assets/coruja.png" type="image/x-icon">
 </head>
     
 
@@ -38,7 +38,7 @@
                     <a href="#" class="lista-menu__link">Design & UX</a>
                 </li>
             </ul>
-            <img class="container__imagem" src="assets/Logo.svg" alt="=logo do books">
+            <img class="container__imagem" src="assets/coruja.png" alt="=logo do coruja">
         </div>
         <div class="container">
             <a href="#" class="container__imagem"><img src="assets/Favoritos.svg" alt="meus favoritos"></a>
@@ -100,9 +100,66 @@
                     <li class="botoes__item"><img src="./assets/Sacola.svg" alt="favoritos"></li>
                 </ul>
                 <!--2° Coluna-->
-                <a href="#" class="botoes__ancora">Saiba mais</a>
+                <a href="#" class="ancora">Saiba mais</a>
             </div> 
         </div>
+    </section>
+
+    <section class="carrossel">
+        <h2 class="carrossel__titulo">Mais Vendidos</h2>
+        <!-- Slider main container -->
+        <div class="swiper">
+
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide"><img src="./assets/Construct2.svg" alt="imagem livro"></div>
+            <div class="swiper-slide"><img src="./assets/Nodejs.svg" alt="imagem livro"></div>
+            <div class="swiper-slide"><img src="./assets/UX.svg" alt="imagem livro"></div>
+            <div class="swiper-slide"><img src="./assets/Tuning.svg" alt="imagem livro"></div>
+            <div class="swiper-slide"><img src="./assets/ReactNative.svg" alt="imagem livro"></div>
+            <div class="swiper-slide"><img src="./assets/Liderança.svg" alt="imagem livro"></div>
+
+            ...
+            </div>
+            
+        
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+        
+        </div>
+
+    </section>
+
+    <section class="card">
+        <!-- 1° linha -->
+        <div class="card__descricao">
+            <!-- 1° coluna -->
+            <div class="descricao">
+                <img class="descricao__estrelas" src="./assets/Estrelinhas.svg" alt="estrelas">
+                <h3 class="descricao__titulo">Autor do Mês</h3>
+                <h2 class="descricao__autor-livro">Alexsander Leal</h2>
+                <p class="descricao__texto">Analista de sistemas e escritor, Alexsander é especialista em Front-End. </p>
+            </div>
+
+            <!-- 2° coluna -->
+            <img class="descricao__imagem" src="./assets/alexsander-profissional.jpg" width="50%">
+        </div>
+
+        <!-- 2° linha -->
+        <div class="card__botoes">
+            <!--1° Coluna-->
+            <ul class="botoes">
+                <li class="botoes__item"><img src="./assets/Favoritos.svg" alt="favoritos"></li>
+                <li class="botoes__item"><img src="./assets/Sacola.svg" alt="favoritos"></li>
+            </ul>
+            <!--2° Coluna-->
+            <a href="#" class="ancora">Saiba mais</a>
+        </div> 
+
     </section>
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
@@ -116,7 +173,7 @@
             type:'bullets',
         },
 
-        });
+    });
     </script>
     
 </body>
