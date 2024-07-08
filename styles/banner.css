@@ -32,11 +32,10 @@
     font-family: var(--fonte-principal);
     font-size: 16px;
     font-weight: 400;
-    text-align: right;
+    padding-left: 2em;
     color: var(--cor-principal);
     background: url("../assets/Pesquisa.svg") no-repeat;
-    background-position: 0em;
-    
+    text-align: left;    
 }
 
 .banner__pesquisa:focus {
