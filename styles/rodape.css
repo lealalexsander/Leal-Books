@@ -7,9 +7,67 @@ hr {
     padding: 1em;
 }
 
+.rodape__educacao {
+    display: none;
+}
+
+.rodape__educacao-online {
+    display: none;
+}
+
+.rodape__comunidade {
+    display: none;
+}
+
 .rodape__titulo {
     font-size: 20px;
     color: var(--cor-degrade);
     font-family: var(--fonte-principal);
     text-align: left;
+}
+
+@media screen and (min-width: 1024px){
+    .rodape {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        padding: 3em;
+        align-items: start;
+        font: var(--fonte-principal);
+    }
+
+    .rodape__item-titulo {
+        font-size: 14px;
+        text-transform: uppercase;
+        color: #858585;
+        display: flex;
+        justify-content: left;
+        margin-bottom: 1.5em;
+    }
+
+    .rodape__item-nome {
+        color: #474646;
+    }
+
+
+    .rodape__item {
+        display: flex;
+        gap: 0.5em;
+        margin: 0.4em 0;
+        align-items: center;
+    }
+
+    .rodape__educacao {
+        display: grid;
+        
+    }
+
+    .rodape__educacao-online {
+        display: grid;
+    }
+    
+    .rodape__comunidade {
+        display: grid;
+    }
+
 }
