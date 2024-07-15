@@ -32,6 +32,7 @@
 .card__descricao {
     display: flex;
     justify-content: space-between;
+    margin-bottom: 0.5em;
 }
 
 .descricao {
@@ -53,6 +54,7 @@
 
 .descricao__imagem {
     margin-bottom: 1em;
+    width: 10.2em;
 }
 
 .descricao__texto {
@@ -63,8 +65,6 @@
 .card__botoes {
     display: flex;
     justify-content: space-between;
-    position: relative;
-    margin: 1em 0 0 0;
 
 }
 
@@ -80,8 +80,6 @@
 
 .botoes {
     display: flex;
-    align-items: center;
-
 }
 
 .botoes__item {
@@ -93,4 +91,64 @@
     font-weight: 700;
     font-size: 22px;
     margin: 0.5em 0;
+}
+
+@media screen and (min-width: 1024px) {
+    .carrossel__titulo {
+        font: size 26px;
+    }
+
+    .swiper-pagination {
+        margin:2em 0 3em 0;
+    }
+
+    .swiper {
+        width: 70%;
+    }
+
+    .swiper-button-next, 
+    .swiper-button-prev {
+        display: block;
+        top: 60%;
+    }
+
+    .card {
+        width: 40%;
+        margin: 2em auto;
+    }
+
+}
+
+@media screen and (min-width: 1728px) {
+    .carrossel__principal {
+        display: flex;
+        margin: 0 20vw 3em 20vw;
+        align-items: center;
+    }
+
+    .swiper-pagination {
+        margin: 1em 0;
+    }
+
+    .swiper {
+        width: 50%;
+    }
+
+    .descricao__titulo {
+        font-size: 32px;
+    }
+
+    .descricao__texto {
+        font-size: 16px;
+    }
+
+    .descricao {
+        margin-right: 2em;
+    }
+
+    .card {
+        width: 60%;
+        margin-left: 3em;
+    }
+
 }
