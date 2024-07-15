@@ -39,6 +39,7 @@
 }
 
 
+
 .container__botao:checked ~ .lista-menu {
     display: block;
 }
@@ -53,6 +54,7 @@
     background-color: var(--cor-principal);
 }
 
+
 .lista-menu__titulo {
     color: var(--cor-secundaria);
     font-weight: bold;
@@ -66,11 +68,32 @@
     color: var(--cor-degrade);
 }
 
+.lista-menu__link:hover {
+    text-shadow: 0 0 20px var(--cor-secundaria), 0 0 500px var(--cor-secundaria);
+}
+
+.lista-menu__item:hover {
+    background-color: rgb(0, 208, 255);
+    
+}
+
 .opcoes {
     display: none;
 }
 
+.opcoes__link:hover {
+    text-shadow: 0 0 20px var(--cor-terciaria), 0 0 5000px var(--cor-terciaria);
+
+}
+
+.container__imagem--texto{
+    display: none;
+}
+
 @media screen and (min-width: 1024px) {
+    .cabecalho{
+        padding: 0 4em 0 4em;
+    }
 
     .container__titulo, .container__titulo--negrito {
         font-family: var(--fonte-secundaria);
@@ -86,14 +109,25 @@
         font-weight: 700;
     }
 
+    .cabecalho__menu-hamburguer {
+        display: none;
+    }
+
+    .opcoes__categoria:hover{
+        background-color: rgb(1, 1, 92);
+        border: var(--cor-degrade);
+        color: rgb(255, 255, 255);
+    }
+
     .opcoes {
         display: flex;
     }
 
     .opcoes__item {
-        padding: 0 2.5em;
+        padding: 1em;
         text-transform: uppercase;
         font-size: 18px;
+        margin: 0 2em 0 2em;
     }
 
     .opcoes__link {
@@ -104,4 +138,53 @@
     .container__imagem-transparente {
         display: none;
     }
+
+    .opcoes__botao:checked~.lista-menu {
+        display: block;
+        width: auto;
+    }
+
+    .opcoes__botao {
+        display: none;
+    }
+
+    .opcoes__categoria:focus {
+        color: blue;
+    }
+    
+}
+
+@media screen and (min-width: 1728px){
+    .cabecalho {
+        
+    }
+
+    .opcoes{
+        margin: 0 0 0 -30em;
+    }
+
+    .opcoes__item {
+        margin: 0 1em 0 1em;
+    }
+
+    .container__imagem {
+        display: flex;
+        flex-direction: row;
+        color: black;
+    }
+    
+
+    .container__imagem--texto{
+        display: flex;
+        text-decoration: none;
+        margin: 0 1em 0 -1em;
+        font-size: 20px;
+        font-family: var(--fonte-principal);
+        color: black;
+    }
+    
+    .container__imagem-transparente {
+        display: none;
+    }
+    
 }
