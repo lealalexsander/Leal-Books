@@ -34,10 +34,50 @@
     font-weight: 400;
     padding-left: 2em;
     color: var(--cor-principal);
-    background: url("../assets/Pesquisa.svg") no-repeat;
-    text-align: left;    
+    background: url("../assets/Pesquisa.svg") no-repeat;   
 }
 
 .banner__pesquisa:focus {
     display: none;
+}
+
+@media screen and (min-width: 1024px) {
+    .banner__titulo {
+        font-size: 36px;
+    }
+
+    .banner__pesquisa {
+        width: 50%;
+        text-align: center;
+        
+    }
+
+    .banner__pesquisa::placeholder {
+        background-position: 7em;
+        padding-left: 0em;
+    }
+}
+
+
+@media screen and (min-width: 1728px) {
+
+    .banner__titulo {
+        font-size: 50px;
+    }
+
+    .banner__paragrafo {
+        font-size: 30px;
+    }
+
+
+    .banner__pesquisa::placeholder {
+        font-family: var(--fonte-principal);
+        font-size: 22px;
+        font-weight: 400;
+        color: var(--cor-principal);
+        background: url("../assets/Pesquisa.svg") no-repeat;   
+        background-position: 8.3em;
+        background-size: 1.3em;
+        align-items: center;
+    }
 }
