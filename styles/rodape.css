@@ -2,6 +2,7 @@ hr {
     margin: 0;
 }
 
+
 .rodape {
     background-color: var(--cor-principal);
     padding: 1em;
@@ -13,6 +14,7 @@ hr {
 
 .rodape__educacao-online {
     display: none;
+    font-family: var(--cor-principal);
 }
 
 .rodape__comunidade {
@@ -25,6 +27,15 @@ hr {
     font-family: var(--fonte-principal);
     text-align: left;
 }
+
+.rodape__item-titulo {
+    font-family: var(--fonte-principal);
+}
+
+.rodape__item-nome {
+    font-family: var(--fonte-principal);
+}
+
 
 @media screen and (min-width: 1024px){
     .rodape {
@@ -70,4 +81,24 @@ hr {
         display: grid;
     }
 
+}
+
+@media screen and (min-width: 1728px){
+    .rodape__titulo {
+        font-size: 24px;
+    }
+
+    .rodape__item-titulo {
+        font-size: 22px;
+    }
+
+    .rodape__item-nome {
+        font-size: 20px;
+       
+    }
+
+    .rodape__educacao {
+        border-left: 2px solid gainsboro;
+        padding-left: 1em;
+    }
 }
