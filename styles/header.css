@@ -181,7 +181,7 @@
     .container__imagem--texto{
         display: flex;
         text-decoration: none;
-        margin: 0 1em 0 -1em;
+        margin: 0 1.3em 0 -0.5em;
         font-size: 20px;
         font-family: var(--fonte-principal);
         color: black;
